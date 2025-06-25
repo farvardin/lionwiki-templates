@@ -45,13 +45,14 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-#entete {
+/* entete */
+.menu-line {
   background-color: #2fddc0;
   font-size: 80%;
   /*color: darken(@bg,15%);*/
   padding: 1em;
 }
-#entete h1 a {
+.menu-line h1 a {
   color: #147868;
   font-weight: 300;
 }
@@ -207,7 +208,7 @@ h1 {
   color: #127060;
 }
 h1 a {
-  color: #eeeeee;
+  color: #eee;
   font-weight: 800;
 }
 h2 {
@@ -368,6 +369,23 @@ progress::-webkit-progress-bar {
 }
 .todotxt_deleted {
   opacity: 0.4;
+}
+/* Spoiler support */
+.spoiler {
+  background-color: #09372f;
+  color: #09372f;
+}
+.spoiler:active {
+  background-color: #22d0b3;
+  color: #09372f;
+}
+.spoiler:hover {
+  background-color: #22d0b3;
+  color: #09372f;
+}
+.spoiler::selection {
+  background-color: #22d0b3;
+  color: #09372f;
 }
 @media (prefers-color-scheme: dark) {
   body {

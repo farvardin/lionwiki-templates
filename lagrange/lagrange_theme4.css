@@ -69,13 +69,14 @@ table {
   margin-left: auto;
   margin-right: auto;
 }
-#entete {
+/* entete */
+.menu-line {
   background-color: #87d477;
   font-size: 80%;
   /*color: darken(@bg,15%);*/
   padding: 1em;
 }
-#entete h1 a {
+.menu-line h1 a {
   color: #262626;
   font-weight: 300;
 }
@@ -231,7 +232,7 @@ h1 {
   color: #081306;
 }
 h1 a {
-  color: #eeeeee;
+  color: #eee;
   font-weight: 800;
 }
 h2 {
@@ -392,6 +393,23 @@ progress::-webkit-progress-bar {
 }
 .todotxt_deleted {
   opacity: 0.4;
+}
+/* Spoiler support */
+.spoiler {
+  background-color: #000000;
+  color: #000000;
+}
+.spoiler:active {
+  background-color: #76ce64;
+  color: #000000;
+}
+.spoiler:hover {
+  background-color: #76ce64;
+  color: #000000;
+}
+.spoiler::selection {
+  background-color: #76ce64;
+  color: #000000;
 }
 @media (prefers-color-scheme: dark) {
   body {
